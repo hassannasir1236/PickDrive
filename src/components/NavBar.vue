@@ -1,7 +1,7 @@
 <template>
   <nav class="bg-transparent">
     <div class="max-w-full flex items-center justify-between p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
-        <div >
+        <div>
             <img src="@/assets/images/NewLogo.png" alt="Logo" class="w-30 h-30">
         </div>
         <div>

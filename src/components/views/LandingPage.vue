@@ -9,21 +9,30 @@
             
             
         <!-- main section  -->
-         <div class="flex flex-row items-center justify-around">
-            <div>
-                <h1 class="text-4xl font-bold text-gray-800">Welcome to Car Rental</h1>
-                <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Get Started</button>
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Get Started</button>
+            <div class="flex flex-row items-center justify-around">
+                <div class="h-[300px] w-[600px]">
+                    <h1 class="text-3xl font-bold text-gray-800">Book a City Taxi to your Destination</h1>
+                    <p class="font-sans text-sm font-normal	my-4 leading-normal text-[#007D65]">Choose from a range of categories and prices</p>
+                    
+                    <div class="flex flex-row items-center justify-around top-32">
+                        <a href="#" class="">
+                            <img src="@/assets/images/PlayStore.png" alt="Responsive Image" class="">
+                        </a>
+                        <a href="#" class="">
+                            <img src="@/assets/images/AppStore.png" alt="Responsive Image" class="">
+                        </a>
+                    </div>
+                    
+                </div>
+                <!-- image section -->
+                <div>
+                    <img src="@/assets/images/MainSectionMobile.png" alt="Responsive Image" class="max-w-full  h-auto">
+                </div>
             </div>
-            <!-- image section -->
-             <div>
-                <img src="@/assets/images/MainSectionMobile.png" alt="Responsive Image" class="max-w-full  h-auto">
-             </div>
-         </div>
         </div>
     </div>
-    <section class="skewed">
+    <section class="absolute top-0 bottom-0 right-0 left-0 w-full h-full bg-[#DEEEEB] z-0 transform skew-y-[349deg] origin-top-left skewed">
+        <img src="@/assets/images/MainbottomLogo.png" alt="Responsive Image" class="absolute w-24 h-24 top-[90%] bottom-[39px] left-[50px] rounded-[4px]">
     </section>
 </template>
 <script>
@@ -46,7 +55,7 @@ export default {
   height: 100%;
   background: #DEEEEB;
   z-index: 0;
-  transform: skewY(344deg);
+  transform: skewY(349deg);
   transform-origin: top left;
 }
 </style>
