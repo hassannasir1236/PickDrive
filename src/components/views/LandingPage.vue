@@ -39,19 +39,28 @@
     <ItsWork />
     <FeatureWork />
     <TestiMonials />
+    <ContactUs />
+    <EndSectionpage />
+    <FooterPage />
 </template>
 <script>
 import NavBar from '../NavBar.vue';
 import ItsWork from '../ItsWork.vue';
 import FeatureWork from '../FeatureWork.vue';
 import TestiMonials from  '../TestiMonials.vue';
+import ContactUs from '../ContactUs.vue';
+import EndSectionpage from '../EndSectionpage.vue';
+import FooterPage from '../FooterPage.vue';
 export default {
     name: 'LandingPage',
     components: {
         NavBar,
         ItsWork,
         FeatureWork,
-        TestiMonials
+        TestiMonials,
+        ContactUs,
+        EndSectionpage,
+        FooterPage
     }
 }
 </script>
