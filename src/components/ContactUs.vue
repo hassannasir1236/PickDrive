@@ -1,10 +1,10 @@
 <template>  
-    <h1 class="font-sans text-lg md:text-2xl lg:text-3xl font-extrabold md:mt-4 xs-m-46 sm:mt-4 mb-4 text-center text-gray-800">
+    <h1 id="contactUs" class="font-sans text-lg md:text-2xl lg:text-3xl font-extrabold md:mt-4 xs-m-46 sm:mt-4 mb-4 text-center text-gray-800">
         Contact Us
     </h1>  
     <section class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center p-6 mt-14">
         <!-- Left Side Content -->
-        <div class="text-left ml-8">
+        <div class="text-left ml-8 slide-in-left">
             <form action="">
                 <div class="relative mb-6">
                     <label class="flex  items-center mb-2 text-gray-600 text-sm font-medium">Name <svg width="7" height="7" class="ml-1" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +39,7 @@
         </div>
 
         <!-- Right Side Image -->
-        <div class="text-center md:text-right flex justify-center">
+        <div class="text-center md:text-right flex justify-center slide-in-right">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3426.9878233519025!2d73.43247657654493!3d30.802975774550585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3922a76637d4b56f%3A0xe8324f5861f1b75!2sFantech%20Labs!5e0!3m2!1sen!2s!4v1736156053681!5m2!1sen!2s" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
@@ -52,3 +52,29 @@ export default {
     }
 }
 </script>
+<style scoped> 
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.slide-in-left {
+  animation: slideInLeft 1s ease-in-out;
+}
+
+/* Slide In From Right */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.slide-in-right {
+  animation: slideInRight 1s ease-in-out;
+}
+</style>

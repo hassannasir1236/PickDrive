@@ -1,5 +1,5 @@
 <template>
-<h1 class="font-sans text-lg md:text-2xl lg:text-3xl font-extrabold md:mt-4 xs-m-46 sm:mt-4 mb-4 text-center text-gray-800">
+<h1 id="feature" class="font-sans text-lg md:text-2xl lg:text-3xl font-extrabold md:mt-4 xs-m-46 sm:mt-4 mb-4 text-center text-gray-800">
     Features
 </h1>  
 <section class="grid grid-cols-1 sm:mx-40 lg:grid-cols-3 md:grid-cols-2 gap-6 items-center p-6">

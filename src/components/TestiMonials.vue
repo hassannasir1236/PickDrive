@@ -1,5 +1,5 @@
 <template>
-    <h1 class="font-sans text-lg md:text-2xl lg:text-3xl font-extrabold md:mt-4 xs-m-46 sm:mt-4 mb-4 text-center text-gray-800">
+    <h1 id="about" class="font-sans text-lg md:text-2xl lg:text-3xl font-extrabold md:mt-4 xs-m-46 sm:mt-4 mb-4 text-center text-gray-800">
         Testimonials
     </h1>  
     <section class="grid grid-cols-1 md:grid-cols-1 gap-6 items-center p-6">
@@ -7,7 +7,7 @@
             <img
             src="@/assets/images/TestiMonailasImages.png"
             alt="Save on ride"
-            class="w-full  object-cover rounded-lg"
+            class="w-full  object-cover rounded-lg slide-in-left"
             />
             <div class="absolute text-left ml-8 w-6/12">
                 <h1 class="text-xl md:text-base font-bold mb-4">Save on ride</h1>
@@ -32,3 +32,16 @@ export default {
     }
 }
 </script>
+<style scoped>
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.slide-in-left {
+  animation: slideInLeft 1s ease-in-out;
+}
+</style>

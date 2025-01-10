@@ -1,5 +1,5 @@
-<template>
-<h1 class="font-sans text-lg md:text-2xl lg:text-3xl font-extrabold md:mt-4 xs-m-46 sm:mt-4 mb-4 text-center text-gray-800">
+<template >
+<h1 id="its-work" class="font-sans text-lg md:text-2xl lg:text-3xl font-extrabold md:mt-4 xs-m-46 sm:mt-4 mb-4 text-center text-gray-800 ">
   How It Works
 </h1>
 <!-- first section -->
@@ -19,7 +19,7 @@
     <img
      src="@/assets/images/HowItsWorksMobile.png"
       alt="Save on ride"
-      class="w-full md:w-3/4 lg:w-2/3 object-cover rounded-lg"
+      class="w-full md:w-3/4 lg:w-2/3 object-cover rounded-lg fade-in"
     />
   </div>
 </section>
@@ -31,7 +31,7 @@
     <img
      src="@/assets/images/ItsWorkSecondImage.png"
       alt="Save on ride"
-      class="w-full md:w-3/4 lg:w-2/3 object-cover rounded-lg"
+      class="w-full md:w-3/4 lg:w-2/3 object-cover rounded-lg fade-in"
     />
   </div>
     <!-- Right Side Content -->
@@ -62,7 +62,7 @@
     <img
      src="@/assets/images/ItsWorkThirdImage.png"
       alt="Save on ride"
-      class="w-full md:w-3/4 lg:w-2/3 object-cover rounded-lg"
+      class="w-full md:w-3/4 lg:w-2/3 object-cover rounded-lg fade-in"
     />
   </div>
 </section>
@@ -74,7 +74,7 @@
     <img
      src="@/assets/images/ItsWorkFourthImage.png"
       alt="Save on ride"
-      class="w-full md:w-3/4 lg:w-2/3 object-cover rounded-lg"
+      class="w-full md:w-3/4 lg:w-2/3 object-cover rounded-lg fade-in"
     />
   </div>
     <!-- Right Side Content -->
@@ -103,5 +103,16 @@ export  default {
    margin-top: 200px;
   }
 }
-
+/* Fade In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 3s ease-in-out;
+}
 </style>
